@@ -1,5 +1,5 @@
 <template>
-  <el-card class="box-card">
+  <el-card shadow="never" class="box-card">
     <div slot="header" class="clearfix">
       <span>个人信息</span>
     </div>
@@ -33,10 +33,10 @@
 <style scoped>
 .box-card{
   width: 280px;
-  height: 300px;
-  float: right;
-  margin-top: 100px;
-  background-color: #fefefe;
+  height: 265px;
+  background-color: #fff;
+  margin-left: 10px;
+  border: 0px !important;
 }
 .text-center{
   text-align: center !important;

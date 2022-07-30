@@ -8,14 +8,15 @@ import InfoCard from '@/components/InfoCard/index';
 <template>
     <div id="#app">
       <nav-bar/>
-      <el-row>
-        <el-col :span="6"><info-card/></el-col>
-        <el-col :span="12">
+      <el-row class="main-content">
+        <el-col :span="3"></el-col>
+        <el-col :span="14">
           <router-view/>
         </el-col>
-        <el-col :span="6">
-          <div class="grid-content ep-bg-purple"/>
+        <el-col :span="5">
+          <info-card/>
         </el-col>
+        <el-col :span="2"></el-col>
       </el-row>
     </div>
 </template>
