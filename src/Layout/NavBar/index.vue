@@ -1,37 +1,24 @@
 <template>
   <el-menu
-      :default-active="activeIndex"
-      class="el-menu-demo"
+      class="el-menu"
+      style="height: 64px"
       mode="horizontal"
+      active-text-color="#ffc9c7"
       :ellipsis="false"
-      @click="handleSelect"
+      router="true"
+      background-color="#e6f3f9"
+      :tabBarStyle="{ borderBottom: 'unset' }"
   >
-    <el-menu-item route="/">LOGO</el-menu-item>
     <div class="flex-grow" />
-    <el-menu-item index="1">Processing Center</el-menu-item>
-    <el-sub-menu index="2">
-      <template #title>Workspace</template>
-      <el-menu-item index="2-1">item one</el-menu-item>
-      <el-menu-item index="2-2">item two</el-menu-item>
-      <el-menu-item index="2-3">item three</el-menu-item>
-      <el-sub-menu index="2-4">
-        <template #title>item four</template>
-        <el-menu-item index="2-4-1">item one</el-menu-item>
-        <el-menu-item index="2-4-2">item two</el-menu-item>
-        <el-menu-item index="2-4-3">item three</el-menu-item>
-      </el-sub-menu>
-    </el-sub-menu>
+    <el-image style="margin-left: 10px" src="./src/assets/logo.png"/>
+    <el-menu-item index="/">Hello~World</el-menu-item>
+    <el-menu-item index="/his">主 页</el-menu-item>
   </el-menu>
 </template>
 
 <script setup>
 import {onMounted, ref} from 'vue'
 import {love} from '@/utils/click'
-
-const activeIndex = ref('1')
-const handleSelect = (key, keyPath) => {
-  console.log(key,keyPath)
-}
 onMounted(
     ()=>love()
 )
@@ -39,6 +26,12 @@ onMounted(
 
 <style>
 .flex-grow {
-  flex-grow: 1;
+  flex-grow: 0.1;
+}
+.el-menu--horizontal > .el-menu-item.is-active {
+  border-bottom: none;
+}
+.el-menu{
+  border: 0 !important;
 }
 </style>

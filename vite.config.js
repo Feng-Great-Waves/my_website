@@ -12,6 +12,7 @@ export default defineConfig({
     },
     extensions:['.js','.vue']
   },
+
   server:{
     host: '0.0.0.0',
     port: 5173,

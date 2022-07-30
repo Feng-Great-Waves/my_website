@@ -1,7 +1,5 @@
 <template>
-    <div style="height: 1200px;">
-      {{ 111 }}
-    </div>
+  {{ '首页' }}
 </template>
 
 <script>

@@ -4,6 +4,10 @@ const routes = [
         path: '/',
         component: () => import('@/view/index'),
     },
+    {
+        path: '/his',
+        component:()=>import('@/view/page/index'),
+    }
 ]
 
 const router = createRouter({
