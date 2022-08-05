@@ -1,8 +1,6 @@
 <template>
   <el-card shadow="never" class="box-card">
-    <ul v-infinite-scroll="load" class="infinite-list" style="overflow: auto">
-      <li v-for="i in count" :key="i" class="infinite-list-item">{{ i }}</li>
-    </ul>
+    <v-md-editor v-model="text" height="400px"></v-md-editor>
   </el-card>
 </template>
 
@@ -12,6 +10,8 @@ const count = ref(0)
 const load = () => {
   count.value += 2
 }
+let text=ref("")
+
 </script>
 
 <style scoped>

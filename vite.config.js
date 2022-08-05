@@ -13,9 +13,11 @@ export default defineConfig({
     alias:{
       '@':path.resolve(__dirname,'src'),
     },
-    extensions:['.js','.vue']
+    extensions:['.js','.vue','.css']
   },
-
+  optimizeDeps: {
+    include: ['@kangc/v-md-editor/lib/theme/vuepress.js'],
+  },
   server:{
     host: '0.0.0.0',
     port: 5173,
