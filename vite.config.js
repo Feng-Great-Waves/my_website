@@ -5,6 +5,9 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [vue()],
+  define: {
+    'process.env': {}
+  },
   //路径别名配置
   resolve:{
     alias:{
@@ -19,12 +22,10 @@ export default defineConfig({
     open:true,
     https:false,
     proxy:{
-      [process.env.VUE_APP_BASE_API]: {
-        target: `http://localhost:8080`,
+      '/dev-api': {
+        target: `http://localhost:8080/`,
         changeOrigin: true,
-        pathRewrite: {
-          ['^' + process.env.VUE_APP_BASE_API]: ''
-        }
+        rewrite: (path) => path.replace(/^\/dev-api/, '')
       }
     }
   },

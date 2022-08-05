@@ -1,0 +1,32 @@
+.share-item{
+    margin-bottom: 20px;
+}
+.share-item span{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.share-item h4{
+    color: #1a1a1a;
+}
+a{
+    text-decoration: none;
+    color: #909090;
+}
+.share-content{
+    margin-top: 6px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e6eb;
+}
+.share-item-cover{
+    width: 120px;
+    height: 80px;
+}
+.share-content-right{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.share-content-title{
+    color: #1d2129;
+    font-family: DINRegular;
+    margin-bottom: 10px;
+}

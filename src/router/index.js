@@ -5,14 +5,20 @@ const routes = [
         component: () => import('@/view/index'),
     },
     {
-        path: '/his',
-        component:()=>import('@/view/page/index'),
+        path: '/share',
+        component:()=>import('@/view/share/index'),
+    },
+    {
+        path: '/s/:id',
+        component:()=>import('@/components/s/index')
     }
+
 ]
 
 const router = createRouter({
+    scrollBehavior: () => ({y: 0}),
     history: createWebHistory(),
-    routes
+    routes:routes
 })
 
 export default router
