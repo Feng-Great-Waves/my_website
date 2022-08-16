@@ -24,16 +24,17 @@
       </el-row>
     </div>
     <el-form :model="shareComments" label-width="120px">
-      <el-input v-model="shareComments.comments" type="textarea" placeholder="请输入评论"/>
-      <el-button style="float: right;width: 200px;margin-top: 20px;margin-bottom: 20px" @click="postComments" type="primary" size="mini">发布</el-button>
+      <com-ment/>
+<!--      <el-input v-model="shareComments.comments" type="textarea" placeholder="请输入评论"/>-->
+<!--      <el-button style="float: right;width: 200px;margin-top: 20px;margin-bottom: 20px" @click="postComments" type="primary" size="mini">发布</el-button>-->
     </el-form>
-
   </el-card>
 
 </template>
 
 <script setup>
 import '@/assets/css/share.css'
+import ComMent from '@/components/ComMent/index'
 import {onMounted, ref,reactive} from "vue";
 import '@/assets/css/card.css'
 import {selectShare} from "@/api/share";

@@ -54,8 +54,6 @@ app.use(ElementPlus)
 app.use(MakeitCaptcha)
 app.use(VMdEditor);
 //注册
-
-
 app.use(VMdPreview);
 app.mount('#app')
 
