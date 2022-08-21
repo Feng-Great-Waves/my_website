@@ -8,7 +8,7 @@
         <span>|</span>
         <el-tag v-for="(tag,index) in item.tags" :key="index" type="warning">{{ tag }}</el-tag>
         <el-row class="share-content">
-          <el-col :span="3"><img :src="item.cover" class="share-item-cover"></el-col>
+          <el-col :span="3"><img src="http://localhost:8205/image/2/2022/08/18/3bd6d1b801904aaeacdf833411ffa9de.jpg" class="share-item-cover"></el-col>
           <el-col class="share-content-right" :span="21">
             <div class="share-content-title">{{ item.title }}</div>
             <span>{{ item.abstracts }}</span>

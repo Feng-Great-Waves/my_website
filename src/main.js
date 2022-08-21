@@ -43,11 +43,11 @@ VMdEditor.use(githubTheme, {
     Hljs: hljs,
 });
 
+
 //滑动条样式
 import '@/assets/css/scrollbar'
 //全局样式
 import '@/assets/css/global'
-
 app.use(router)
 app.use(store)
 app.use(ElementPlus)
